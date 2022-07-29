@@ -44,21 +44,21 @@ import {
             </div> 
             
     <div class=" relative w-max mx-auto py-8  text-white text-center sm:py-0 "><h1 class="p-4 pt-11 sm:text-4xl text-3xl  inline-block font-bold  ">  Come back when the timer hits zero <br> to see messages and more!  </h1></div>
-
+   
            <div class="w-full  pt-16">
     <div class=" mx-auto w-full rounded-md bg-white p-2">
       <Disclosure v-slot="{ open }">
-        <DisclosureButton
+        <a href="#gForm"><DisclosureButton
           class=" flex w-full justify-between rounded-lg text-blueDusk/95 px-4 py-2 text-left text-2xl font-bold hover:bg-blueDusk/20 focus:outline-none focus-visible:ring focus-visible:ring-blueDusk focus-visible:ring-opacity-75"
-        >
-          <span>Leave a birthday message for Glenn!</span>
+        > <span>Leave a birthday message for Glenn!</span> 
+          <!-- <span>Leave a birthday message for Glenn!</span> -->
           <ChevronUpIcon
             :class="open ? 'rotate-180 transform' : ''"
             class="h-5 w-5 text-blueDusk/95"
           />
-        </DisclosureButton>
-        <DisclosurePanel class="px-4 pt-4 pb-2 text-sm text-gray-500">
-              <div class=" border-t-4  border-blueDusk/95  pt-4"><iframe class= " mx-auto w-[400px] h-[760px] sm:w-[640px] sm:h-[700px] " src="https://docs.google.com/forms/d/e/1FAIpQLSefeo9KjC3IFR5Y_13KDnSWNFF9AOONgfsvHoCsDcJqZhSopg/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </DisclosureButton></a>
+        <DisclosurePanel class="sm:px-4 pt-4 pb-2 text-sm text-gray-500">
+              <div id="gForm" class=" border-t-4  border-blueDusk/95  sm:pt-4"><iframe class= " mx-auto w-full h-[760px] md:w-[640px] sm:h-[700px] " src="https://docs.google.com/forms/d/e/1FAIpQLSefeo9KjC3IFR5Y_13KDnSWNFF9AOONgfsvHoCsDcJqZhSopg/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div>
         </DisclosurePanel>
       </Disclosure>
