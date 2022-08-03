@@ -50,7 +50,7 @@ import {
       <Disclosure v-slot="{ open }">
         <a href="#gForm"><DisclosureButton
           class=" flex w-full justify-between rounded-lg text-blueDusk/95 px-4 py-2 text-left text-2xl font-bold hover:bg-blueDusk/20 focus:outline-none focus-visible:ring focus-visible:ring-blueDusk focus-visible:ring-opacity-75"
-        > <span>Leave a birthday message for Glenn!</span> 
+        > <span>Leave a birthday message for my Dad</span> 
           <!-- <span>Leave a birthday message for Glenn!</span> -->
           <ChevronUpIcon
             :class="open ? 'rotate-180 transform' : ''"
